@@ -49,9 +49,9 @@ jobs:
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v6
         with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          fingerprint: ${{ vars.GPG_FINGERPRINT }}
+          gpg_private_key: ${{ secrets.exe.secret.gpg }}
+          passphrase: ${{ secrets.exetior }}
+          fingerprint: ${{ vars.exe.secsub.gpg }}
 
       - name: Release
         env:
